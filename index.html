@@ -1,0 +1,367 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>With Bill Murray</title>
+    <link href='http://fonts.googleapis.com/css?family=Bitter:400,700,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="js/vendor/modernizr.js"></script>
+
+
+    <style>
+
+ 
+
+
+body { background: #7DC708; color: #fff; font-family: Helvetica; display: table-cell; vertical-align: middle; }
+
+body { font-family: 'Roboto', serif; line-height: 160%; letter-spacing: 1px; }
+
+input[type='button'] { background: #fff; border-radius: 25px; border: 8px solid #fff; color: #7DC708; font-size: 30px; height: 100px; width: 300px;}
+input[type='button']:hover { background: #7DC708; color: #fff; opacity: .9; }
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+</style>
+
+
+
+
+
+
+  </head>
+  <body>
+
+<nav class="top-bar" data-topbar role="navigation">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="#"><i class="fa fa-birthday-cake"></i> With Bill Murray</a></h1>
+    </li>
+     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li class="has-dropdown">
+        <a href="#">Follow me</a>
+        <ul class="dropdown">
+          <li><a href="http://twitter.com"><i class="fa fa-twitter"></i> Twitter</a></li>
+          <li><a href="http://www.facebook.com"><i class="fa fa-facebook"></i> Facebook</a></li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+</nav>
+
+<center>
+<img class="web_photo1" src="img/BillLarge/Murray02.jpg">
+</center>
+<p></p>
+<div class="row">
+  <div class="large-4 columns"> 
+      <center><i class="fa fa-pencil fa-spin fa-3x"></i></center>
+    </div>
+  <div class="large-4 columns">
+      <center><i class="fa fa-cogs fa-spin fa-3x"></i></center>
+  </div>
+  <div class="large-4 columns">
+      <center><i class="fa fa-film fa-spin fa-3x"></i></center>      
+  </div>
+</div>
+<p></p>
+
+<!-- photos -->
+
+<ul class="example-orbit" data-orbit>
+  <li>
+    <img src="img/BillLarge/Murray01.jpg" alt="slide 1" />
+    <div>
+      Caption One.
+    </div>
+  </li>
+  <li class="active">
+    <img class="web_photo2" src="img/BillLarge/Murray02.jpg" alt="slide 2" />
+    <div>
+      Caption Two.
+    </div>
+  </li>
+  <li>
+    <img class="web_photo2" src="img/BillLarge/Murray03.jpg" alt="slide 3" />
+    <div>
+      Caption Three.
+    </div>
+  </li>
+</ul>
+
+<!-- END -->
+
+<!-- Yuri's code -->
+
+<p></p>
+<p></p>
+
+
+<center>
+  <form method="put">
+    <input id="askyuri" type="button" value="Quotable Murray">
+  </form>
+  <h3 id="yurianswer"></h3>
+</center>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<p></p>
+<script>
+( function( $ ) {
+
+function initialize() {
+  $( '#askyuri' ).on( 'click', askyuri );
+}
+
+function askyuri() {
+  var yuri = new Yuri();
+  yuri.would( {} );
+}
+
+var Yuri = function () {};
+
+Yuri.prototype.would = function () {
+  var mythings  = this.things();
+  var yourthing = mythings[ Math.floor( Math.random() * mythings.length ) ];
+  var yuriwould = yourthing;
+  $( '#yurianswer' ).html( yuriwould );
+}
+
+Yuri.prototype.things = function () {
+  return [ 
+    'I go home and stay there. I wash and scrub up each day,<br> and that\'s it. One month I actually grew a moustache, <br>just so I could say that I\'d done something.',
+    'Awards are meaningless to me, and I have nothing <br> but disdain for anyone who actively campaigns to get one.',
+    'Somewhere there\'s a score being kept, so you have<br>an obligation to live life as well as you can, be <br>as engaged as you can.',
+    'I throw a Christmas party at my house. It\'s not really <br>a Christmas party, because I don\'t want to call it <br>a Christmas party. But let\'s just say I put a lot <br>of Christmas trees around<br>the house, so it smells good.',
+    'Parties are only bad when a fight breaks out, when men <br>fight over women or vice versa. Someone takes a fall, <br>an ambulance comes, and the police arrive.<br>If you can avoid those things, pretty much all behaviour is acceptable.'
+  ];
+}
+
+$( window ).load( function() {
+  initialize();
+} );
+
+ 
+} )( jQuery );
+</script>
+
+<p></p>
+
+
+<!-- END -->
+
+
+
+
+
+<!--
+<div class="row">
+  <div class="large-8 columns">
+    left div 8
+      <div class="row">
+        <div class="large-3 columns"> 
+          left div 3       
+        </div>
+        <div class="large-9 columns">
+          right div 9      
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="large-6 columns"> 
+          left div 6       
+        </div>
+        <div class="large-6 columns">
+          right div 6       
+        </div>
+      </div>
+  </div>
+  <div class="large-4 columns">
+    right div 4
+  </div>
+</div>
+ -->
+    <div class="row">
+      <div class="large-12 columns">
+        <h1 class="headline">With Bill Murray</h1>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="large-12 columns">
+      	<div class="panel">
+          <!--
+	        <h3 class="smallerheadline">We&rsquo;re stoked you want to try Foundation! </h3>
+          -->
+	        <p>Bill Murray is known for his acting roles in such classic films as "Groundhog Day", "Ghostbusters", and "Stripes". However, in recent years, Murray has become known for his awesome, enigmatic celebrity behavior. From stories on the set to sightings in Karaoke clubs and even crashing random house parties, here are some of  Bill Murray encounters recently reported.</p>
+	        
+	        <div class="row">
+	        	<div class="large-4 medium-4 columns">
+	    		<p><a href="">Bill Murray at the airport</a>
+            <br /></p>
+            <p>I was 13 years old and with my Father at O’Hare airport when I spotted Bill Murray waiting to check into his flight. I told my Dad “Hey, that’s Bill Murray!” My Dad, never one to be star struck, answered back, “Sure looks like it”.</p>
+<!--
+            <p>“Do you think he’d mind if I ask him for an autograph?”</p>
+
+            <p>My Dad responded that it didn’t look like he was too busy, so I walked up to him and asked for an autograph. He was very friendly and gracious to do so, while my dad told him, “My son stays up late every Saturday to watch your show”, my dad explained.</p>
+
+            <p>“I hope he’s not drinking too much”</p>
+
+            <p>“Nope, I do the drinking at our house”, my dad assured him. “Good for you sir”, was his reply, and we were on our merry way.</p>
+
+            <a href="" class="more-link">Continue reading <span class="meta-nav">→</span></a>
+-->
+
+	    	</div>
+	        	<div class="large-4 medium-4 columns">
+	        		<p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
+	        	</div>
+	        	<div class="large-4 medium-4 columns">
+	        		<p><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</p>
+	        	</div>        
+					</div>
+      	</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-8 medium-8 columns">
+        <h5>Here&rsquo;s your basic grid:</h5>
+        <!-- Grid Example -->
+
+        <div class="row">
+          <div class="large-12 columns">
+            <div class="callout panel">
+              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-6 medium-6 columns">
+            <div class="callout panel">
+              <p>Six columns</p>
+            </div>
+          </div>
+          <div class="large-6 medium-6 columns">
+            <div class="callout panel">
+              <p>Six columns</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-4 medium-4 small-4 columns">
+            <div class="callout panel">
+              <p>Four columns</p>
+            </div>
+          </div>
+          <div class="large-4 medium-4 small-4 columns">
+            <div class="callout panel">
+              <p>Four columns</p>
+            </div>
+          </div>
+          <div class="large-4 medium-4 small-4 columns">
+            <div class="callout panel">
+              <p>Four columns</p>
+            </div>
+          </div>
+        </div>
+        
+        <hr />
+                
+        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
+        <form>
+				  <div class="row">
+				    <div class="large-12 columns">
+				      <label>Input Label</label>
+				      <input type="text" placeholder="large-12.columns" />
+				    </div>
+				  </div>
+				  <div class="row">
+				    <div class="large-4 medium-4 columns">
+				      <label>Input Label</label>
+				      <input type="text" placeholder="large-4.columns" />
+				    </div>
+				    <div class="large-4 medium-4 columns">
+				      <label>Input Label</label>
+				      <input type="text" placeholder="large-4.columns" />
+				    </div>
+				    <div class="large-4 medium-4 columns">
+				      <div class="row collapse">
+				        <label>Input Label</label>
+				        <div class="small-9 columns">
+				          <input type="text" placeholder="small-9.columns" />
+				        </div>
+				        <div class="small-3 columns">
+				          <span class="postfix">.com</span>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="row">
+				    <div class="large-12 columns">
+				      <label>Select Box</label>
+				      <select>
+				        <option value="husker">Husker</option>
+				        <option value="starbuck">Starbuck</option>
+				        <option value="hotdog">Hot Dog</option>
+				        <option value="apollo">Apollo</option>
+				      </select>
+				    </div>
+				  </div>
+				  <div class="row">
+				    <div class="large-6 medium-6 columns">
+				      <label>Choose Your Favorite</label>
+				      <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
+				      <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
+				    </div>
+				    <div class="large-6 medium-6 columns">
+				      <label>Check these out</label>
+				      <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+				      <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
+				    </div>
+				  </div>
+				  <div class="row">
+				    <div class="large-12 columns">
+				      <label>Textarea Label</label>
+				      <textarea placeholder="small-12.columns"></textarea>
+				    </div>
+				  </div>
+				</form>
+      </div>     
+
+      <div class="large-4 medium-4 columns">
+			  <h5>Try one of these buttons:</h5>
+			  <p><a href="#" class="small button">Simple Button</a><br/>
+        <a href="#" class="small radius button">Radius Button</a><br/>
+        <a href="#" class="small round button">Round Button</a><br/>            
+        <a href="#" class="medium success button">Success Btn</a><br/>
+        <a href="#" class="medium alert button">Alert Btn</a><br/>
+        <a href="#" class="medium secondary button">Secondary Btn</a></p>           
+				<div class="panel">
+        	<h5>So many components, girl!</h5>
+        	<p>A whole kitchen sink of goodies comes with Foundation. Checkout the docs to see them all, along with details on making them your own.</p>
+        	<a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>          
+        </div>
+      </div>
+    </div>
+    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>

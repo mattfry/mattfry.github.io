@@ -1,0 +1,32 @@
+.headline {
+	background: black;
+	color: white;
+	font-family: Georgia, serif;
+	font-size: 4em;
+	margin-top: 100px;
+	padding: 50px 0 50px 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+.panel .smallerheadline {
+	color: red;
+	font-size: 1em;
+	padding: 200px;
+}
+
+.web_photo1 {
+	width: 80%;
+}
+
+.web_photo2 {
+	width: 180%;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+li {
+	font-family: 'Bitter', serif;
+}
